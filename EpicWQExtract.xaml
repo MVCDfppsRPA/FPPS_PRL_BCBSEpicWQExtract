@@ -1,11 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.In_Credentials="EpicCreds_RPAbot24" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.In_Credentials="EpicCreds_RPAbot24" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="In_Credentials" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>871,6212</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1315,6581</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -45,6 +45,7 @@
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
       <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -110,9 +111,13 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="616,6147" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="616,6516" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="BCBSFilePathName" />
       <Variable x:TypeArguments="x:String" Name="Username" />
@@ -125,13 +130,13 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="554,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;PRLEpicWQExtract Sequence Started&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: explorer.exe" sap:VirtualizedContainerService.HintSize="554,1190" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" ScopeGuid="f36a105a-1923-4ccf-a80f-c660563fbb97" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: explorer.exe" sap:VirtualizedContainerService.HintSize="554,1230" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" ScopeGuid="f36a105a-1923-4ccf-a80f-c660563fbb97" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,867" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,907" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -142,7 +147,7 @@
                 <uix:TargetAnchorable DesignTimeRectangle="370, 0, 37, 30" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Citrix Workspace'" FullSelectorArgument="&lt;uia cls='MSTaskListWClass' name='Running applications' /&gt;&lt;uia automationid='Citrix.Workspace.App' name='Citrix Workspace' role='button' /&gt;" FuzzySelectorArgument="&lt;uia cls='MSTaskListWClass' name='Running applications' /&gt;&lt;uia automationid='Citrix.Workspace.App' name='Citrix Workspace' role='button' check:fulltext='Citrix Workspace' /&gt;" Guid="1f3d5421-8d70-4616-b2c0-849fb280069a" InformativeScreenshot="1eb78d265f7f6b2b85dea24837edad05.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Citrix Workspace" sap:VirtualizedContainerService.HintSize="450,588" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="c2ce6c5e-0ba8-4659-9d68-99330bc44b6b" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Citrix Workspace" sap:VirtualizedContainerService.HintSize="450,628" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="c2ce6c5e-0ba8-4659-9d68-99330bc44b6b" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -232,13 +237,16 @@
         <uix:TargetApp Area="0, 0, 1920, 1050" FilePath="C:\Program Files (x86)\Epic\Hyperdrive\100.2404.6.0\Hyperdrive\hyperdrive.exe" IconBase64="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" InformativeScreenshot="4dea8d466003628798d2c62bc0e0c4d9.png" Selector="&lt;wnd app='hyperdrive.exe' cls='Chrome_WidgetWin_1' isremoteapp='1' title='Hyperspace – Production' /&gt;" Title="Hyperspace – Production" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[NAppCloseMode.Always]" DisplayName="Use Remote Desktop: Hyperspace – UW MED BILLING DEPARTMENT 20 – Production" sap:VirtualizedContainerService.HintSize="554,2690" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" OpenMode="IfNotOpen" ScopeGuid="47a95d30-ed78-41ec-8341-c85f09808b50" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[NAppCloseMode.Always]" DisplayName="Use Remote Desktop: Hyperspace – UW MED BILLING DEPARTMENT 20 – Production" sap:VirtualizedContainerService.HintSize="554,3057" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" OpenMode="IfNotOpen" ScopeGuid="47a95d30-ed78-41ec-8341-c85f09808b50" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,2367" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,2734" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="si:FileInfo" Name="BCBSWQFile" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -246,10 +254,10 @@
             </sap:WorkflowViewStateService.ViewState>
             <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'page tab Workqueue List'" sap:VirtualizedContainerService.HintSize="458,189" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="47a95d30-ed78-41ec-8341-c85f09808b50" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable DesignTimeRectangle="42, 60, 36, 23" DesignTimeScaleFactor="1" ElementType="TabPage" FriendlyName="'page tab Workqueue List'" FullSelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT*' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='Workspaces' role='page tab list' /&gt;&lt;ctrl name='Workqueue List' role='page tab' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20*' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='Workspaces' role='page tab list' /&gt;&lt;ctrl name='Workqueue List' role='page tab' automationid='' /&gt;" Guid="a1ad4eee-86c1-4d3e-8246-b1716d9378e6" ImageBase64="" InformativeScreenshot="80c044f7529c157c6427ccc695e109af.png" ScopeSelectorArgument="&lt;wnd app='hyperdrive.exe' cls='Chrome_WidgetWin_1' isremoteapp='1' title='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                <uix:TargetAnchorable DesignTimeRectangle="41, 60, 36, 23" DesignTimeScaleFactor="1" ElementType="TabPage" FriendlyName="'page tab Workqueue List'" FullSelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT*' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='Workspaces' role='page tab list' /&gt;&lt;ctrl name='Workqueue List' role='page tab' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT*' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='Workspaces' role='page tab list' /&gt;&lt;ctrl name='Workqueue List' role='page tab' automationid='' /&gt;" Guid="a1ad4eee-86c1-4d3e-8246-b1716d9378e6" InformativeScreenshot="87b9c83e63ef9d9a292d2a09c96772dd.png" ScopeSelectorArgument="&lt;wnd app='hyperdrive.exe' cls='Chrome_WidgetWin_1' isremoteapp='1' title='Hyperspace – UW MED BILLING DEPARTMENT*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target DesignTimeRectangle="11, 39, 118, 14" FriendlyName="'Guarantor Account'" FullSelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='User' role='tool bar' /&gt;&lt;ctrl name='Guarantor Account' role='push button' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='User' role='tool bar' /&gt;&lt;ctrl name='Guarantor Account' role='push button' /&gt;&lt;ctrl automationid='' role='grouping' check:text='Guarantor Account' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                      <uix:Target DesignTimeRectangle="10, 39, 118, 14" FriendlyName="'Guarantor Account'" FullSelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='User' role='tool bar' /&gt;&lt;ctrl name='Guarantor Account' role='push button' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='User' role='tool bar' /&gt;&lt;ctrl name='Guarantor Account' role='push button' /&gt;&lt;ctrl automationid='' role='grouping' check:text='Guarantor Account' /&gt;" SearchSteps="Selector, FuzzySelector" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
@@ -338,11 +346,24 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="30" DisplayName="Click 'table'" sap:VirtualizedContainerService.HintSize="458,182" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="47a95d30-ed78-41ec-8341-c85f09808b50" Version="V3">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable DesignTimeRectangle="779, 378, 62, 16" DesignTimeScaleFactor="1" ElementType="Table" FriendlyName="'table'" FullSelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Save File' role='document' /&gt;&lt;ctrl name='Save File Activity' role='grouping' /&gt;&lt;ctrl name='Activity Content' role='pane' /&gt;&lt;ctrl name='Save File' role='grouping' /&gt;&lt;ctrl name='Accept' role='push button' /&gt;&lt;ctrl idx='2' role='table' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Save File' role='document' /&gt;&lt;ctrl name='Save File Activity' role='grouping' /&gt;&lt;ctrl name='Activity Content' role='pane' /&gt;&lt;ctrl name='Save File' role='grouping' /&gt;&lt;ctrl name='Accept' role='push button' /&gt;&lt;ctrl automationid='' role='table' /&gt;" Guid="b7c50b4c-e900-456b-b4f2-9c2b741832e9" ImageBase64="" InformativeScreenshot="000524aecccaa76a28634dea7060a1bf.png" ScopeSelectorArgument="&lt;wnd app='hyperdrive.exe' cls='Chrome_WidgetWin_1' isremoteapp='1' title='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
-              </uix:NClick.Target>
-            </uix:NClick>
+            <ui:GetLastDownloadedFile FileResource="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="S:\Shared\00_FPPS Automations\PFS_PRL_BCBSExtract_InvoiceComparisons\PreviousReports" File="[BCBSWQFile]" sap:VirtualizedContainerService.HintSize="458,549" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" IgnoreFiles="tmp, dwn, crdownload">
+              <ui:GetLastDownloadedFile.Body>
+                <ActivityAction>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,268" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="30" DisplayName="Click 'table'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="47a95d30-ed78-41ec-8341-c85f09808b50" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="779, 378, 62, 16" DesignTimeScaleFactor="1" ElementType="Table" FriendlyName="'table'" FullSelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Save File' role='document' /&gt;&lt;ctrl name='Save File Activity' role='grouping' /&gt;&lt;ctrl name='Activity Content' role='pane' /&gt;&lt;ctrl name='Save File' role='grouping' /&gt;&lt;ctrl name='Accept' role='push button' /&gt;&lt;ctrl idx='2' role='table' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Save File' role='document' /&gt;&lt;ctrl name='Save File Activity' role='grouping' /&gt;&lt;ctrl name='Activity Content' role='pane' /&gt;&lt;ctrl name='Save File' role='grouping' /&gt;&lt;ctrl name='Accept' role='push button' /&gt;&lt;ctrl automationid='' role='table' /&gt;" Guid="b7c50b4c-e900-456b-b4f2-9c2b741832e9" ImageBase64="" InformativeScreenshot="000524aecccaa76a28634dea7060a1bf.png" ScopeSelectorArgument="&lt;wnd app='hyperdrive.exe' cls='Chrome_WidgetWin_1' isremoteapp='1' title='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:GetLastDownloadedFile.Body>
+            </ui:GetLastDownloadedFile>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
@@ -356,7 +377,24 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <Delay Duration="00:00:25" sap:VirtualizedContainerService.HintSize="554,122" sap2010:WorkflowViewState.IdRef="Delay_4" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="554,84" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,201" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Delay Duration="00:00:25" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="Delay_4" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
     <ui:CloseApplication DisplayName="Close Application 'editable text'" sap:VirtualizedContainerService.HintSize="554,139" sap2010:WorkflowViewState.IdRef="CloseApplication_2">
       <ui:CloseApplication.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="233b1655-d603-4318-8682-b2e46f936769" InformativeScreenshot="bf9926cdbbaf3a1a998cc33cec17bd57" Selector="&lt;wnd app='selfservice.exe' cls='HwndWrapper*' title='Citrix Workspace' /&gt;">
