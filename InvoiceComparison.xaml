@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1315,3928" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ueabf="clr-namespace:UiPath.Excel.Activities.Business.Filter;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1315,3955" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ueabf="clr-namespace:UiPath.Excel.Activities.Business.Filter;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -156,7 +156,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="698,3863" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="693,3890" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="DTPreviousReport" />
       <Variable x:TypeArguments="x:Boolean" Name="FileExist" />
@@ -170,8 +170,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="636,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;PRLWQExtract_Invoice Comparisons Sequence Started&quot;]" />
-    <Assign sap:VirtualizedContainerService.HintSize="636,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="631,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;PRLWQExtract_Invoice Comparisons Sequence Started&quot;]" />
+    <Assign sap:VirtualizedContainerService.HintSize="631,114" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[DaysBefore]</OutArgument>
       </Assign.To>
@@ -179,7 +179,7 @@
         <InArgument x:TypeArguments="x:Int32">-1</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[FileExist = False]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="636,618" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1" MaxIterations="4">
+    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[FileExist = False]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="631,618" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1" MaxIterations="4">
       <ui:InterruptibleDoWhile.Body>
         <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,472" sap2010:WorkflowViewState.IdRef="Sequence_6">
           <sap:WorkflowViewStateService.ViewState>
@@ -207,10 +207,10 @@
         </Sequence>
       </ui:InterruptibleDoWhile.Body>
     </ui:InterruptibleDoWhile>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[DTPreviousReport]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="636,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" Password="1234" SheetName="Sheet1" WorkbookPath="\\amc\dept\fpps\data\Shared\00_FPPS Automations\PFS_PRL_BCBSExtract_InvoiceComparisons\PreviousReports\BCBS_PAYOR_ISSUES_SA_20_2025-07-10.xlsx" />
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="636,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[DTPreviousReport]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="631,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" Password="1234" SheetName="Sheet1" WorkbookPath="[&quot;\\amc\dept\fpps\data\Shared\00_FPPS Automations\PFS_PRL_BCBSExtract_InvoiceComparisons\PreviousReports\BCBS_PAYOR_ISSUES_SA_20_&quot; &amp; (Now.AddDays(-1).ToString(&quot;yyyy-MM-dd&quot;)) &amp; &quot;.xlsx&quot;]" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="631,84" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="698,938" sap2010:WorkflowViewState.IdRef="Sequence_7">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="698,923" sap2010:WorkflowViewState.IdRef="Sequence_7">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -263,8 +263,8 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:CopyFile ContinueOnError="{x:Null}" Destination="S:\Shared\00_FPPS Automations\PFS_PRL_BCBSExtract_InvoiceComparisons\InvoiceComparison" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="636,186" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[&quot;S:\Shared\00_FPPS Automations\PFS_PRL_BCBSExtract_InvoiceComparisons\PreviousReports\BCBS_PAYOR_ISSUES_SA_20_&quot; + Today.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.xlsx&quot;]" />
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="636,1716" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1" ShowExcelWindow="True">
+    <ui:CopyFile ContinueOnError="{x:Null}" Destination="S:\Shared\00_FPPS Automations\PFS_PRL_BCBSExtract_InvoiceComparisons\InvoiceComparison" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="631,186" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[&quot;S:\Shared\00_FPPS Automations\PFS_PRL_BCBSExtract_InvoiceComparisons\PreviousReports\BCBS_PAYOR_ISSUES_SA_20_&quot; + Today.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.xlsx&quot;]" />
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="631,1716" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1" ShowExcelWindow="True">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
@@ -330,7 +330,7 @@
         </ActivityAction>
       </ueab:ExcelProcessScopeX.Body>
     </ueab:ExcelProcessScopeX>
-    <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Hello Debra -&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;The file for today&amp;#39;s Invoice Comparison Report is attached. &lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Pls. let us know if you need anything else.&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Thank you.&lt;/SPAN&gt;&lt;SPAN&gt;&#xA;&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" Cc="[New String(){&quot;fppstech@uw.edu&quot;}]" ConnectionId="b35be178-4fbf-4027-9f5a-7e47c70a8833" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="636,627" sap2010:WorkflowViewState.IdRef="SendMailConnections_3" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="Report: Today's Invoice Comparisons" To="[New String(){&quot;flewelli@uw.edu&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+    <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Hello Debra -&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;The file for today&amp;#39;s Invoice Comparison Report is attached. &lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Pls. let us know if you need anything else.&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Thank you.&lt;/SPAN&gt;&lt;SPAN&gt;&#xA;&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" Cc="[New String(){&quot;fppstech@uw.edu&quot;}]" ConnectionId="b35be178-4fbf-4027-9f5a-7e47c70a8833" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="631,627" sap2010:WorkflowViewState.IdRef="SendMailConnections_4" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="Report: Today's Invoice Comparisons" To="[New String(){&quot;flewelli@uw.edu&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
       <umam:SendMailConnections.AttachmentList>
         <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
           <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("S:\Shared\00_FPPS Automations\PFS_PRL_BCBSExtract_InvoiceComparisons\InvoiceComparison\BCBS_PAYOR_ISSUES_SA_20_" + Today.ToString("yyyy-MM-dd") + ".xlsx")]</InArgument>
@@ -360,6 +360,6 @@
         </usau:BackupSlot>
       </umam:SendMailConnections.MailboxBackup>
     </umam:SendMailConnections>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="636,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;PRLWQExtract_Invoice Comparisons Sequence Ended&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="631,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;PRLWQExtract_Invoice Comparisons Sequence Ended&quot;]" />
   </Sequence>
 </Activity>
