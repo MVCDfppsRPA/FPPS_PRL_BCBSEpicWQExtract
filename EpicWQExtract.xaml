@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1315,6577</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>751,6577</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -147,7 +147,7 @@
                 <uix:TargetAnchorable DesignTimeRectangle="370, 0, 37, 30" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Citrix Workspace'" FullSelectorArgument="&lt;uia cls='MSTaskListWClass' name='Running applications' /&gt;&lt;uia automationid='Citrix.Workspace.App' name='Citrix Workspace' role='button' /&gt;" FuzzySelectorArgument="&lt;uia cls='MSTaskListWClass' name='Running applications' /&gt;&lt;uia automationid='Citrix.Workspace.App' name='Citrix Workspace' role='button' check:fulltext='Citrix Workspace' /&gt;" Guid="1f3d5421-8d70-4616-b2c0-849fb280069a" InformativeScreenshot="1eb78d265f7f6b2b85dea24837edad05.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Citrix Workspace" sap:VirtualizedContainerService.HintSize="450,588" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="c2ce6c5e-0ba8-4659-9d68-99330bc44b6b" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Citrix Workspace" sap:VirtualizedContainerService.HintSize="450,588" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="c2ce6c5e-0ba8-4659-9d68-99330bc44b6b" Version="V2" WindowResize="Maximize">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -185,7 +185,7 @@
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
     <Delay Duration="00:00:25" sap:VirtualizedContainerService.HintSize="554,122" sap2010:WorkflowViewState.IdRef="Delay_3" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Remote Desktop: Hyperspace – Production" sap:VirtualizedContainerService.HintSize="554,1459" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="bb3c919d-2c78-4701-84c7-114b0b659e58" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Remote Desktop: Hyperspace – Production" sap:VirtualizedContainerService.HintSize="554,1459" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="bb3c919d-2c78-4701-84c7-114b0b659e58" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -237,7 +237,7 @@
         <uix:TargetApp Area="0, 0, 1920, 1050" FilePath="C:\Program Files (x86)\Epic\Hyperdrive\100.2404.6.0\Hyperdrive\hyperdrive.exe" IconBase64="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" InformativeScreenshot="4dea8d466003628798d2c62bc0e0c4d9.png" Selector="&lt;wnd app='hyperdrive.exe' cls='Chrome_WidgetWin_1' isremoteapp='1' title='Hyperspace – Production' /&gt;" Title="Hyperspace – Production" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[NAppCloseMode.Always]" DisplayName="Use Remote Desktop: Hyperspace – UW MED BILLING DEPARTMENT 20 – Production" sap:VirtualizedContainerService.HintSize="554,3093" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" OpenMode="IfNotOpen" ScopeGuid="47a95d30-ed78-41ec-8341-c85f09808b50" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[NAppCloseMode.Always]" DisplayName="Use Remote Desktop: Hyperspace – UW MED BILLING DEPARTMENT 20 – Production" sap:VirtualizedContainerService.HintSize="554,3093" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" OpenMode="IfNotOpen" ScopeGuid="47a95d30-ed78-41ec-8341-c85f09808b50" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -256,7 +256,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="41, 60, 36, 23" DesignTimeScaleFactor="1" ElementType="TabPage" FriendlyName="'page tab Workqueue List'" FullSelectorArgument="&lt;ctrl role='document' name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' /&gt;&lt;ctrl role='grouping' aastate='focusable, opaque' idx='1' /&gt;&lt;ctrl role='page tab list' /&gt;&lt;ctrl role='page tab' name='Workqueue List' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;ctrl role='document' name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' /&gt;&lt;ctrl role='grouping' aastate='focusable, opaque' /&gt;&lt;ctrl role='page tab list' /&gt;&lt;ctrl role='page tab' name='Workqueue List' automationid='' /&gt;" Guid="a1ad4eee-86c1-4d3e-8246-b1716d9378e6" InformativeScreenshot="bf66cd78adbbeca86c8688bff4e44623.png" ScopeSelectorArgument="&lt;wnd app='hyperdrive.exe' cls='Chrome_WidgetWin_1' isremoteapp='1' title='Hyperspace – UW MED BILLING DEPARTMENT*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="10, 39, 118, 14" FriendlyName="'Guarantor Account'" FullSelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='User' role='tool bar' /&gt;&lt;ctrl name='Guarantor Account' role='push button' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='User' role='tool bar' /&gt;&lt;ctrl name='Guarantor Account' role='push button' /&gt;&lt;ctrl automationid='' role='grouping' check:text='Guarantor Account' /&gt;" ImageBase64="" SearchSteps="Selector" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
