@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>751,6577</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1315,6634</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -117,7 +117,7 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="616,6512" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="616,6569" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="BCBSFilePathName" />
       <Variable x:TypeArguments="x:String" Name="Username" />
@@ -237,13 +237,13 @@
         <uix:TargetApp Area="0, 0, 1920, 1050" FilePath="C:\Program Files (x86)\Epic\Hyperdrive\100.2404.6.0\Hyperdrive\hyperdrive.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAZhSURBVFhHxZd5VM1pGMd/YzCFFEWWKNNiK2u5QhuVJclSjIYohpiQfR9ysg1mxnLmD86ZP8wZUWiZW9Fd3BatVLdIwiCVLI1IZam+87zvvde9jJnDzNQ853xO7/397u98v+/zvL/nuQkA/lcEa6F9l42C5dHtgk3FDsEGLUGYYFNOeodo3VZYLlgcP2U/E8qle3Bj/ZG3WXdYxVoVJRrWHELJ6oO4vvoHFauIlUTo9ygO/U7FCmI54wCKl+1Hccg+FH+tIjdgGyIGTcN2wXq/sE2wriuiBwr9t+KS6xIVLsEqnFXkOC1WMWYRckZ/xcketRDZjsTIBcgWBSFrRKAKB8J+PrKGz0PmsABkDp2LzCHE4DnIGPQlMuz8kTt+BZRB4SwTzwSWErbbt8Q/QviN+AcIZ9j6I33gbKQP+AJFi3bzcmgN6Oy6OYXT+89Cer+ZKFq4S8cA1fmDhHXT/Q+FL/YlrH1RtCBca4AdrBYRtvHDRasZSLOcjquBugboVLeUcNrnRJ9puDp/h44BeqXeCOvU+T8RpnTrCqdZTEWquQ+uBIRpDbD3uDmE+a7fEU7tTfSagsK523UMUBNhwqxZPDgjR+VpGSHF/SiJlkgJbu3+CWkD/VSi7xFmpppevaYOCxRvOQKF+WSVqI5wipk3UnpORuGcbVoDrHOxHT+IVvCH/ypuH4uE1HIiUvv5cuHMIXOQSVnS7DhreACKNx5C4dp9kAz2RlKPcUjpMxU5VN5L7iHIoCwm95iElO5eKJy9VccAtUyW6tqb97hQXdl9iPu7InGgO+HBSRjggfJfZXhV/Qy/ZxagKvkymhoa+fdfPn6Cq6v24UbYUbpfg7rySpwnA+UnE9HwvI5/RxP15Q+R578JSt91rBNqDBxAjvNioLGJf+nFoyqUxSWhQizH/XgF7osVuBy4CS8eVvH7jZTme1EJuHH4ODfLoul1A6qylHxdfbWErlfy9fNbpchdGY7s4C2ouXmXX6t/8BhZHkHYIlipDVDtWWvUxOvaOrysfsp3q0G5cpf6LnBpXTiiTAYj1nQkckPC1Fe10dSoykzjy1eI7uuKUx3tEG04HGJzN4htJxCeSHfxxwbBUm2AJtTdgxH8IRYy7wCcMR2C2O4jENNdhJhuIuQu3a6+C5wf64c4Epf0dEd5RKL6qjY0Bp79VooTHfohzkgEifFYXFm8E4XL9yB9SgiyPRdpM3BtyV5UyXP4Qyyqi0rwRHkN1QXX8ZShvI76ykfqu8DT4pu4dfQUqhSX1FeAypRM/peJlybI+JpFybETKFz1LR7Gp/HPDbX1SHVfgJzxwfhGsFYZKArei2f511F7txw1d+5xnt8pewtWYxaPcvJRW1bB1yyeFBQjbQ6N152HUHO7FBXyi4iyGInSWAkvgSYa6l+iLFaKeAcfROrbIYcyQD8F1Aao/gorHySYuSDG1AHRXe1xlojuSusu9ogzH/PGQPqyTYgwsoW43zjEWjjhlOEgnDYcghgjB8QY2iPKYDDOGAxFbEd6ttNwxFi7IdqSzoGBHSL0BiBSzxZx+vbI9VqhfQvYaEy1mg5Fn8mQmU+ArDfRazxkZp6Q9vTAZb81XJyFWOSFmM4OSDRxRqKxM84ZOyHJ2AVSqrGksxuSjJwhYRi64nxHJyR0cIS4vQjidiMQry/COX1HJOmPQf6UNdo+wEbj+/o1616scyX38ML5rq4422kYThsN5cIXungimVCYEMZEZw8oOrnjghFhOA4XOo6F3MAN8g6ukLV3gaydM2T6hJ4TZJ+9Y4CNxvf1a9YyU0g8pfskyE09kWRCOzR2hdzE/YOE5e2JdiSuI8xpOwZ53qt1DNBo/FO/5sJeSO42CcmmE5HcdQLteDwJEx8rrBEnYWmb0Zy8yToG2GhsKWFp61GQfuqIPK9VWgNsNPJ0t4Awp5Ujciet1DFAo/FfC+vW+W+EJZ9QByVyJ4aqDFAzqM/z3cB/hDSn8BtxQcQPfLZHCOsDNcI8wUz6i40XsuhUFszajIKZm1Dgx8YlYyOUMzZAOZ2xHsppxNR1nPypa5HvQ9DrlO+9hp9qDh0uVl9dWLo5tGtGulswfrbwZMPoR0FPaBUUKJgpNgtW1SwlLQENoapQoc9J9n+pQCEivAk/YmYzwzSYFtPsRrQmBEP1BzOiVzPDNJgW02wjCILwB4kwNW3GshuAAAAAAElFTkSuQmCC" InformativeScreenshot="4dea8d466003628798d2c62bc0e0c4d9.png" Selector="&lt;wnd app='hyperdrive.exe' cls='Chrome_WidgetWin_1' isremoteapp='1' title='Hyperspace – Production' /&gt;" Title="Hyperspace – Production" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[NAppCloseMode.Always]" DisplayName="Use Remote Desktop: Hyperspace – UW MED BILLING DEPARTMENT 20 – Production" sap:VirtualizedContainerService.HintSize="554,3093" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" OpenMode="IfNotOpen" ScopeGuid="47a95d30-ed78-41ec-8341-c85f09808b50" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[NAppCloseMode.Always]" DisplayName="Use Remote Desktop: Hyperspace – UW MED BILLING DEPARTMENT 20 – Production" sap:VirtualizedContainerService.HintSize="554,3150" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" OpenMode="IfNotOpen" ScopeGuid="47a95d30-ed78-41ec-8341-c85f09808b50" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,2770" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,2827" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="si:FileInfo" Name="BCBSWQFile" />
             </Sequence.Variables>
@@ -252,24 +252,65 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'page tab Workqueue List'" sap:VirtualizedContainerService.HintSize="458,225" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="47a95d30-ed78-41ec-8341-c85f09808b50" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'page tab Workqueue List'" sap:VirtualizedContainerService.HintSize="458,225" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="47a95d30-ed78-41ec-8341-c85f09808b50" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable DesignTimeRectangle="41, 60, 36, 23" DesignTimeScaleFactor="1" ElementType="TabPage" FriendlyName="'page tab Workqueue List'" FullSelectorArgument="&lt;ctrl role='document' name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' /&gt;&lt;ctrl role='grouping' aastate='focusable, opaque' idx='1' /&gt;&lt;ctrl role='page tab list' /&gt;&lt;ctrl role='page tab' name='Workqueue List' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;ctrl role='document' name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' /&gt;&lt;ctrl role='grouping' aastate='focusable, opaque' /&gt;&lt;ctrl role='page tab list' /&gt;&lt;ctrl role='page tab' name='Workqueue List' automationid='' /&gt;" Guid="a1ad4eee-86c1-4d3e-8246-b1716d9378e6" InformativeScreenshot="bf66cd78adbbeca86c8688bff4e44623.png" ScopeSelectorArgument="&lt;wnd app='hyperdrive.exe' cls='Chrome_WidgetWin_1' isremoteapp='1' title='Hyperspace – UW MED BILLING DEPARTMENT*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target DesignTimeRectangle="10, 39, 118, 14" FriendlyName="'Guarantor Account'" FullSelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='User' role='tool bar' /&gt;&lt;ctrl name='Guarantor Account' role='push button' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='User' role='tool bar' /&gt;&lt;ctrl name='Guarantor Account' role='push button' /&gt;&lt;ctrl automationid='' role='grouping' check:text='Guarantor Account' /&gt;" ImageBase64="" SearchSteps="Selector" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
+                <uix:TargetAnchorable DesignTimeRectangle="41, 60, 36, 23" DesignTimeScaleFactor="1" ElementType="TabPage" FriendlyName="'page tab Workqueue List'" FullSelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20*' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='Workspaces' role='page tab list' /&gt;&lt;ctrl name='Workqueue List' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='Workspaces' role='page tab list' /&gt;&lt;ctrl name='Workqueue List' role='page tab' automationid='' /&gt;" Guid="3a41bc6d-3ca5-431e-99e1-c1030ae7f8f4" InformativeScreenshot="60001e41f62bc7180ab20cb8ca8df44f.png" ScopeSelectorArgument="&lt;wnd app='hyperdrive.exe' cls='Chrome_WidgetWin_1' isremoteapp='1' title='Hyperspace – UW MED BILLING DEPARTMENT 20*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears" Retry="True">
+                <uix:VerifyExecutionOptions DisplayName="Element 'page tab Workqueue List'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="41, 60, 36, 23" DesignTimeScaleFactor="1" ElementType="TabPage" FriendlyName="'page tab Workqueue List'" FullSelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20*' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='Workspaces' role='page tab list' /&gt;&lt;ctrl name='Workqueue List' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20*' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='Workspaces' role='page tab list' /&gt;&lt;ctrl name='Workqueue List' role='page tab' automationid='' /&gt;" Guid="6e133a12-b029-4b7c-a2d7-e2a72ec4aa2c" InformativeScreenshot="60001e41f62bc7180ab20cb8ca8df44f.png" ScopeSelectorArgument="&lt;wnd app='hyperdrive.exe' cls='Chrome_WidgetWin_1' isremoteapp='1' title='Hyperspace – UW MED BILLING DEPARTMENT 20*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                  </uix:VerifyExecutionOptions.Target>
                   <uix:VerifyExecutionOptions.Timeout>
                     <InArgument x:TypeArguments="x:Double" />
                   </uix:VerifyExecutionOptions.Timeout>
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="458,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,304" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'page tab Workqueue List'" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="47a95d30-ed78-41ec-8341-c85f09808b50" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="41, 60, 36, 23" DesignTimeScaleFactor="1" ElementType="TabPage" FriendlyName="'page tab Workqueue List'" FullSelectorArgument="&lt;ctrl role='document' name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' /&gt;&lt;ctrl role='grouping' aastate='focusable, opaque' idx='1' /&gt;&lt;ctrl role='page tab list' /&gt;&lt;ctrl role='page tab' name='Workqueue List' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;ctrl role='document' name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' /&gt;&lt;ctrl role='grouping' aastate='focusable, opaque' /&gt;&lt;ctrl role='page tab list' /&gt;&lt;ctrl role='page tab' name='Workqueue List' automationid='' /&gt;" Guid="a1ad4eee-86c1-4d3e-8246-b1716d9378e6" InformativeScreenshot="bf66cd78adbbeca86c8688bff4e44623.png" ScopeSelectorArgument="&lt;wnd app='hyperdrive.exe' cls='Chrome_WidgetWin_1' isremoteapp='1' title='Hyperspace – UW MED BILLING DEPARTMENT*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="10, 39, 118, 14" FriendlyName="'Guarantor Account'" FullSelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='User' role='tool bar' /&gt;&lt;ctrl name='Guarantor Account' role='push button' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='User' role='tool bar' /&gt;&lt;ctrl name='Guarantor Account' role='push button' /&gt;&lt;ctrl automationid='' role='grouping' check:text='Guarantor Account' /&gt;" ImageBase64="" SearchSteps="Selector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears" Retry="True">
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
             <uix:NClick ActivateBefore="True" ClickType="Double" DelayBefore="3" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="458,189" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="47a95d30-ed78-41ec-8341-c85f09808b50" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="43, 280, 54, 28" DesignTimeScaleFactor="1" FriendlyName="'41931'" FullSelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT*' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='Workqueue List' role='property page' /&gt;&lt;ctrl name='Workqueue List - Follow-up - Favorites' role='document' /&gt;&lt;ctrl name='Workqueue List - Follow-up - Favorites Activity' role='grouping' /&gt;&lt;ctrl name='Activity Content' role='pane' /&gt;&lt;ctrl name='Workqueue List - Follow-up - Favorites' role='grouping' /&gt;&lt;ctrl idx='4' role='row' /&gt;&lt;ctrl name='41931' role='cell' /&gt;&lt;ctrl role='grouping' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;ctrl name='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' role='document' /&gt;&lt;ctrl name='Epic Hyperspace' role='grouping' /&gt;&lt;ctrl name='Workqueue List' role='property page' /&gt;&lt;ctrl name='Workqueue List - Follow-up - Favorites' role='document' /&gt;&lt;ctrl name='Workqueue List - Follow-up - Favorites Activity' role='grouping' /&gt;&lt;ctrl name='Activity Content' role='pane' /&gt;&lt;ctrl name='Workqueue List - Follow-up - Favorites' role='grouping' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl name='41931' role='cell' /&gt;&lt;ctrl role='grouping' automationid='' check:text='41931' /&gt;" Guid="48ee4f75-4934-4271-ab4b-6e7a676b9a78" ImageBase64="" InformativeScreenshot="b4828bfb4a5af4470a86ad6368f1423c.png" ScopeSelectorArgument="&lt;wnd app='hyperdrive.exe' cls='Chrome_WidgetWin_1' isremoteapp='1' title='Hyperspace – UW MED BILLING DEPARTMENT 20 – Production' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
