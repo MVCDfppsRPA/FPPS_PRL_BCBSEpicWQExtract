@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1315,6634</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1315,6754</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -117,7 +117,7 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="616,6569" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="616,6689" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="BCBSFilePathName" />
       <Variable x:TypeArguments="x:String" Name="Username" />
@@ -130,13 +130,14 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="554,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;PRLEpicWQExtract Sequence Started&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: explorer.exe" sap:VirtualizedContainerService.HintSize="554,1190" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" ScopeGuid="f36a105a-1923-4ccf-a80f-c660563fbb97" Version="V2">
+    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="554,122" sap2010:WorkflowViewState.IdRef="Delay_5" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: explorer.exe" sap:VirtualizedContainerService.HintSize="554,1188" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" ScopeGuid="f36a105a-1923-4ccf-a80f-c660563fbb97" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,867" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,865" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
